@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 5</title>
+  </head>
+  <body>
+    <h1>Aula 5 - Tags</h1>
+    <h3>Tópicos da aula</h3>
+    <ul>
+      <li>Listas</li>
+      <li>Tipos de Listas</li>
+      <ul>
+        <li>Listas não ordenadas</li>
+        <li>Listas ordenadas</li>
+        <li>Listas de definição</li>
+      </ul>
+      <li>ol: define lista ordenada numérica</li>
+      <li>ul:: define lista com marcadores sem ordem</li>
+      <li>li: define um item da lista</li>
+      <li>Lista de definação</li>
+      <ul>
+        <li>dl:define uma lista de definação</li>
+        <li>dt: define um termo da lista</li>
+        <li>dd: define uma descricao da lista</li>
+      </ul>
+    </ul>
+    <ul>
+      <h3>Exemplo: Usando lista de definição</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HTML é uma linguagem de marcação de texto</dd>
+        <dt>Nagevação</dt>
+        <dd>Navegador é um software que requisita um documento HTML</dd>
+      </dl>
+    </ul>
+    <ul>
+      <li>Tabelas</li>
+      <ul>
+        Tags basicas:
+        <li>table</li>
+        <li>tr: linha</li>
+        <li>th: coluna</li>
+        <li>td:</li>
+      </ul>
+      <h3>Exemplo de Tabela:</h3>
+      <table border>
+        <tr>
+          <!--Inicio da linha de cabeçalho -->
+          <th>Cabecalho 1</th>
+          <th>Cabeçalho 2</th>
+          <th>Cabecalho 3</th>
+        </tr>
+        <!-- Final da linha do cabecalho-->
+        <tr>
+          <!-- Inicio da primeira linha-->
+          <td>Linha 1 - Coluna 1</td>
+          <td>Linha 1 - Coluna 2</td>
+          <td>Linha 1 - Coluna 3</td>
+        </tr>
+        <!-- Final da primeira linha-->
+        <tr>
+          <!-- Inicio da segunda linha-->
+          <td>Linha 2 - Coluna 1</td>
+          <td>Linha 2 - Coluna 2</td>
+          <td>Linha 2 - Coluna 3</td>
+        </tr>
+        <!-- Final da segunda linha-->
+      </table>
+      <br />
+      <h3>Pratica de aula</h3>
+      <table border>
+        <tr>
+          <th>Frutas</th>
+          <th>Verduras</th>
+          <th>Legumes</th>
+        </tr>
+        <tr>
+          <td>Maça</td>
+          <td>Alface</td>
+          <td>Amendoim</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td>Couve</td>
+          <td>Trigo</td>
+        </tr>
+      </table>
+    </ul>
+    <ul>
+      <li>Formulários</li>
+      <ul>
+        <li>Para inserir um formulário, é utilizada a tag form.</li>
+      </ul>
+      <li>Entrada de Texto</li>
+      <ul>
+        <li>
+          input: Caixas de texto de uma única linha (não aceita o uso da tecla
+          Enter).
+        </li>
+        <ul>
+          <li>
+            A tag input recebe o atributo “type” que especifica como será seu
+            valor, podendo ser: text, email, password
+          </li>
+        </ul>
+        <li>
+          textarea: Caixas para conteúdo multilinha. Pode ser uma ou várias
+          linhas de texto.
+        </li>
+      </ul>
+      <li>botoes</li>
+      <li>Controle de selecao</li>
+      <ul>
+        <li>Botoes de radio</li>
+        <li>caixas de selecao</li>
+        <li>Menu suspenso</li>
+      </ul>
+      <h3>Radio</h3>
+      <form>
+        <span>Masculino</span>
+        <input type="radio" name="genero" value="masculino" />
+        <br /><span>Feminino</span>
+        <input type="radio" name="genero" value="feminino" />
+        <br /><span>Outro</span>
+        <input type="radio" name="genero" value="outro" />
+      </form>
+      <h3>Menu Suspenso</h3>
+      <form>
+        <select name="tamanhos">
+          <option>Selecione</option>
+          <option value="G">Grande</option>
+          <option value="M">Médio</option>
+          <option value="P">Pequeno</option>
+        </select>
+      </form>
+      <h3>Caixa de selecao</h3>
+      <form action="">
+        <div>Aceita termos e condicoes</div>
+        <input type="checkbox" nmame="acepta" value="1" />
+      </form>
+      <h3>Label</h3>
+      <form action="">
+        <label for="nome_sobrenome">Nome:</label>
+        <input type="text" name="nome_sobrenome" />
+      </form>
+      <h3>Conjunto de campo</h3>
+      <form action="">
+        <fieldset>
+          <legend>Tamanho de Camiseta</legend>
+          <!--Os elementos de formularios irão aqui-->
+        </fieldset>
+      </form>
+      <h3>Prática</h3>
+      <form action="">
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <span>Gênero:</span><br />
+          <span>Masculino</span>
+          <input type="radio" name="masculino" value="masculino" />
+          <span>Feminino</span>
+          <input type="radio" name="feminino" value="feminino" />
+          <span>Outro</span>
+          <input type="radio" name="outro" value="outro" /><br /><br />
+          <label for="nome_sobrenome">Nome:</label>
+          <input type="text" name="nome_sobrenome" /><br />
+          <label for="nome_sobrenome">Sobrenome:</label>
+          <input type="text" name="nome_sobrenome" id="" />
+          <br /><br />
+          <select name="tamanhos">
+            <option value="">Selecione</option>
+            <option value="G">Grande</option>
+            <option value="M">Médio</option>
+            <option value="P">Pequeno</option>
+          </select>
+          <br /><br />
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+      <br />
+      <li>Links</li>
+      <ul>
+        <li>
+          Os links, também conhecidos como âncoras, são utilizados para
+          relacionar <br />partes do mesmo documento. Por padrão, são exibidos
+          em azul e sublinhados .
+        </li>
+      </ul>
+      <li>Como criar um link: a href="produtos.html">Produtos a</li>
+      <li>Links Relativos</li>
+      <ul>
+        <li>
+          Os links relativos são aqueles que apontam para páginas localizadas
+          <br />dentro do mesmo projeto. Se a página referenciada estiver na
+          mesma pasta, <br />basta mencionar o seu nome para gerar o link.
+        </li>
+        <li>"a href="contato.html">Contato a</li>
+      </ul>
+      <li>Links Internos</li>
+      <ul>
+        <li>
+          Os links internos permitem fazer referências a seções de sua página,
+          <br />para as quais a id é utilizada: a href="#rodape">Vá ao rodapé da
+          página a
+        </li>
+        <li>
+          Também é possível usar como destino uma seção específica em uma página
+          diferente: a href="contato.html#formulario">Formulario de contato a
+        </li>
+      </ul>
+      <li>Multimídia em HTML</li>
+      <ul>
+        <li>
+          Inserir imagens: São inseridas com a tag <img />, que pertence ao
+          grupo de tags <br />que se fecham nelas mesmas (com a barra no final).
+        </li>
+      </ul>
+    </ul>
+  </body>
+</html>
